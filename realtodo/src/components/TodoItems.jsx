@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import './todo.css'
-import { useTodo } from '../context/Todocontext'
-function TodoItems({todo}) {
-  const {toggleComplete,updateTodo,deleteTodo} = useTodo();
-  const [isTodoEditable,setIstodoeditable] = useState(false);
-  const [todoMsg,setTodoMsg] = useState(todo.todo) 
-  const edit = ()=>{
+import { useTodo } from '../context/Todocontext' //it is object of {id:1,todo:"helo",complete}
+function TodoItems({todo}) {  // remember that file context api i hope 
+  const {toggleComplete,updateTodo,deleteTodo} = useTodo(); // first of all we will get all values
+  const [isTodoEditable,setIstodoeditable] = useState(false);//if you are not understand whole procedure after watching video
+  const [todoMsg,setTodoMsg] = useState(todo.todo) // todo.todo means we get already saved value in object
+  const edit = ()=>{                          // i will provide all code in description
     updateTodo(todo.id,{...todo,todo: todoMsg});
    setIstodoeditable(false)
   }
