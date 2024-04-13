@@ -1,0 +1,17 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body{
+  background-color: #242424;
+  color: white;
+}
+.container{
+  min-height: 100vh;
+  max-width: 500px;
+}
+.itemsCont{
+  scroll-behavior: smooth !important;
+}
