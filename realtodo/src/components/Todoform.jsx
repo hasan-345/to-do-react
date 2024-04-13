@@ -13,7 +13,7 @@ function Todoform() {
     }else{
       alert("Please write something");
     }
-  }
+  } // it is input field component 
   return (
     <div className='formDiv'>
      <form onSubmit={add} >
